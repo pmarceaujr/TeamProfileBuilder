@@ -1,7 +1,7 @@
 const generateTeam = team => {
     const generateManager = manager => {
         return `
-        <section class='manager col-2  mt-4 mb-1'>
+        <section class='manager  mt-4 mb-1'>
        <div class="card border-primary mx-1 shadow ">
             <div class="card-body text-primary card-header">
                 <h4>Manager: ${manager.getName()}</h4>
@@ -42,10 +42,7 @@ const generateTeam = team => {
           </div>
           </div>`
     }
-    /*let html = '';
-    html = html + (team.filter(employee => employee.getRole() === 'Manager').map(manager => generateManager(manager)));
-    html = html + (team.filter(employee => employee.getRole() === 'Engineer').map(engineer => generateEngineer(engineer)));
-    html = html + (team.filter(employee => employee.getRole() === 'Intern').map(intern => generateIntern(intern)));*/
+
     const html = [];
     html.push(team.filter(employee => employee.getRole() === 'Manager').map(manager => generateManager(manager)));
     html.push("<section class='engineer  d-flex flex-row ' >")
@@ -54,11 +51,8 @@ const generateTeam = team => {
     html.push("<section class='intern  d-flex flex-row ' >")
     html.push(team.filter(employee => employee.getRole() === 'Intern').map(intern => generateIntern(intern)).join(''));
     html.push("</section>")
-    console.log(team)
-    console.log(html)
     return html.join('');
 
-    //return html
 }
 module.exports = team => {
     return `

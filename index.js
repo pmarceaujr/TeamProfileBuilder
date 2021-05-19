@@ -244,7 +244,9 @@ const initTeamBuilder = () => {
             fs.mkdirSync(outputDirName)
         }
         fs.writeFileSync(outputFilePath, generatePage(teamMembers), 'utf-8')
-        console.log('Team profile successfully created!');
+        console.log('****************************************');
+        console.log('*  Team profile successfully created!  *');
+        console.log('****************************************');
     }
 
     //This will call and start the add team members application, starting with the team manager.
