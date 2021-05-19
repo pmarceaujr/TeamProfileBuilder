@@ -1,0 +1,21 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  margin-top: 1.5em;
+  width: 100%;
+}
+.card {
+  width: 25rem;
+}
+
+header {
+  background-color: rgb(168, 164, 164);
+}
