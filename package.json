@@ -1,0 +1,27 @@
+{
+  "name": "teamprofilebuilder",
+  "version": "1.0.0",
+  "description": "NODE application to build a web profile of a dev team",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarceaujr/TeamProfileBuilder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmarceaujr/TeamProfileBuilder/issues"
+  },
+  "homepage": "https://github.com/pmarceaujr/TeamProfileBuilder#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "jest": "^26.6.3"
+  }
+}
